@@ -38,7 +38,7 @@ nav {
 }
 
 .logo img {
- height: 50px;
+  height: 50px;
 }
 
 .nav-links {
@@ -157,20 +157,89 @@ nav {
   margin-bottom: 20px;
 }
 
-.socials {
+.contacts {
   list-style: none;
   display: flex;
 }
 
-.socials li {
+.contacts li {
   margin-right: 20px;
 }
 
-.socials li a {
+.contacts li a {
   color: #fff;
   font-size: 24px;
 }
 
 .footer-bottom {
   margin-top: 50px;
-  text-align:
+  text-align: border-top: 1px solid #fff;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.footer-bottom a:hover {
+  background-color: #fff;
+  color: #002147;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links.show li {
+    margin: 10px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .gallery {
+    padding: 20px 0;
+  }
+
+  .slide {
+    flex: 0 0 50%;
+    margin: 0 5px;
+  }
+
+  .footer-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-content h3,
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
