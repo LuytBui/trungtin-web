@@ -37,6 +37,10 @@ nav {
   letter-spacing: 2px;
 }
 
+.logo img {
+ height: 50px;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
