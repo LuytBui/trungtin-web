@@ -173,10 +173,11 @@ nav {
 
 .footer-bottom {
   margin-top: 50px;
-  text-align: border-top: 1px solid #fff;
+  text-align: center;
+  border-top: 1px solid #fff;
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -197,6 +198,18 @@ nav {
   color: #002147;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
   .nav-links {
@@ -210,6 +223,14 @@ nav {
 
   .nav-links.show li {
     margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
   }
 
   .hero-text h1 {
